@@ -14,7 +14,7 @@ BSP (Slovenian DAM)
 EPEX DE/FR/AT (German/French/Austrian DAM)
 SEEPEX (Serbian DAM)
 
-Sends out an Hourly Chart and Baseload Peakload prices with overall volume
+Sends out an e-mail with Hourly Chart and Baseload Peakload prices plus overall volume
 
 How it works: 
 The program made out of two python executables.
