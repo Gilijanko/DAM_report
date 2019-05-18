@@ -3,6 +3,8 @@ CWE and CEE Electricity day-ahead prices e-mail report
 
 What it does: 
 
+USES SELENIUM DRIVER
+
 1. The program gathers the following prices:
 OKTE (Slovakian DAM)
 OPCOM (Romanian DAM)
