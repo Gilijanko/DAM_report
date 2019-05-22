@@ -203,7 +203,7 @@ newMail.BodyFormat = olFormatHTML    #or olFormatRichText or olFormatPlain
 attachment = newMail.Attachments.Add(kep)
 attachment.PropertyAccessor.SetProperty("http://schemas.microsoft.com/mapi/proptag/0x3712001F", "MyId1")
 newMail.HTMLBody = html+"<tr>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</tr><html><body><img src=""cid:MyId1""></body></html>"
-newMail.To = "eko@mvm.hu"
+newMail.To = "EMAIL ADDRESS COMES HERE"
 
 # carbon copies and attachments (optional)
 
