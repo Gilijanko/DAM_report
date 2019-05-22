@@ -49,7 +49,7 @@ isotdam = isotfinal.set_index([h24])
 isotdam.columns=['ISOT', 'SK Volume']
 
 ########### HUPX Table ##########
-hupx = pd.read_excel(downloadlink+'dam_weekly_data_export.xlsx', sheet_name='Órás árak és mennyiségek', header=2)
+hupx = pd.read_excel(downloadlink+'dam_weekly_data_export.xlsx', sheet_name='Órás árak és mennyiségek', header=3)
 hupx.index = pd.MultiIndex.from_product(cch24, names=['Hours', 'second'])
 hx = hupx.unstack()
 hcols = [0,1,2,3,4,5,6,7,8,9,10,11,12,13,14,15]
@@ -72,7 +72,7 @@ cropex = crdam.set_index([h24])
 
 
 ########### EPEX DE Table ##########
-epex_de = pd.read_excel(downloadlink+'EPEXDE.xls', header=1)
+epex_de = pd.read_excel(downloadlink+'EPEXDE.xls', header=0)
 epex_de.index = pd.MultiIndex.from_product(cch24, names=['Hours', 'second'])
 epexde = epex_de.unstack()
 decols = [0,1,2,3,4,5,6,7,8,9,10,11,12,13,14,15,16,17]
@@ -81,7 +81,7 @@ epexdedam.columns=['EPEX DE', 'DE Volume']
 #epexdedam.to_excel(downloadlink+'nemet.xlsx')
 
 ########### EPEX FR Table ##########
-epex_fr = pd.read_excel(downloadlink+'EPEXFR.xls', header=1)
+epex_fr = pd.read_excel(downloadlink+'EPEXFR.xls', header=0)
 epex_fr.index = pd.MultiIndex.from_product(cch24, names=['Hours', 'second'])
 epexfr = epex_fr.unstack()
 frcols = [0,1,2,3,4,5,6,7,8,9,10,11,12,13,14,15,16,17]
@@ -91,7 +91,7 @@ epexfrdam.columns=['EPEX FR', 'FR Volume']
 
 
 ########### EPEX AT Table ##########
-epex_at = pd.read_excel(downloadlink+'EPEXAT.xls', header=1)
+epex_at = pd.read_excel(downloadlink+'EPEXAT.xls', header=0)
 epex_at.index = pd.MultiIndex.from_product(cch24, names=['Hours', 'second'])
 epexat = epex_at.unstack()
 atcols = [0,1,2,3,4,5,6,7,8,9,10,11,12,13,14,15,16,17]
@@ -101,7 +101,7 @@ epexatdam.columns=['EPEX AT', 'AT Volume']
 
 
 ########### EPEX SR Table ##########
-epex_sr = pd.read_excel(downloadlink+'seepex.xls', header=1)
+epex_sr = pd.read_excel(downloadlink+'seepex.xls', header=0)
 epex_sr.index = pd.MultiIndex.from_product(cch24, names=['Hours', 'second'])
 epexsr = epex_sr.unstack()
 srcols = [0,1,2,3,4,5,6,7,8,9,10,11,12,13,14,15,16,17]
