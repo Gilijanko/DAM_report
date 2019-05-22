@@ -26,6 +26,7 @@ The program made out of two python executables.
 How to set up before first use:
 1. Download Chromedriver to C:/webdrivers/chromedriver for Selenium to work with. You can edit the path inside python file.
 2. Set default download link: 'C:/Users/whatever/Downloads/' This is the place where Chrome downloads files from the browser by default.
+3. Set e-mail address
 
 Things before use:
 1. This program will not work before CET 13:30 every day. This is because the publications on webpages differ and finished around 13:30 CET every day.
