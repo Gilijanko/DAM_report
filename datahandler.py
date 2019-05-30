@@ -111,7 +111,7 @@ epexsrdam.columns=['SEEPEX', 'SR Volume']
 
 
 ########### BSP Table ##########
-bspp = pd.read_excel(downloadlink+'MarketResultsAuction.xlsx', sheet_name=bspdate, index_col=[0], header=1, nrows=30)
+bspp = pd.read_excel(downloadlink+'MarketResultsAuction.xlsx', sheet_name=bspdate, index_col=[0], header=1, nrows=31)
 bsppda = bspp.loc[holnapinap]
 bspv = pd.read_excel(downloadlink+'MarketResultsAuction.xlsx', sheet_name=bspdate, index_col=[0], header=1, skiprows=35)
 bspvda = bspv.loc[holnapinap]
