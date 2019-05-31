@@ -19,7 +19,7 @@ hete = datetime.datetime.now() - datetime.timedelta(days=5)
 hetenap = hete.strftime("%Y-%m-%d")
 otenap = holnap.strftime("%d_%m_%Y")
 opcomnap = holnap.strftime('%#m_%#d_%#Y')
-most = datetime.datetime.now()
+most = datetime.datetime.now()+ datetime.timedelta(days=1)
 bspdate = most.strftime("%B")
 #################################################################
 ################### PROCESS RAW TABLE DATA ######################
